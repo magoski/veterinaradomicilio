@@ -1197,23 +1197,25 @@ a.cdetail:hover {
   :root { --nav-h: 64px; }
 
   /* mobile nav */
-  .navbar { background: #fff; }
+  .navbar { background: #fff !important; backdrop-filter: none; -webkit-backdrop-filter: none; }
   .hamburger { display: flex; }
   .nav-links {
-    display: none;
+    display: none !important;
     position: fixed;
-    top: var(--nav-h); left: 0; right: 0; bottom: 0;
-    background: #fff;
+    top: 64px; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    background: #ffffff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    z-index: 900;
+    gap: 24px;
+    z-index: 1001;
     overflow-y: auto;
+    padding: 20px;
   }
-  .nav-links.open { display: flex; }
-  .nav-links a { font-size: 1.2rem; padding: 12px 28px; }
-  .nav-cta { padding: 12px 32px !important; font-size: 1.1rem !important; }
+  .nav-links.open { display: flex !important; }
+  .nav-links a { font-size: 1.2rem; padding: 14px 32px; color: var(--c-dark) !important; width: 100%; text-align: center; }
+  .nav-cta { padding: 14px 32px !important; font-size: 1.1rem !important; }
 
   /* hero */
   .hero-container {
