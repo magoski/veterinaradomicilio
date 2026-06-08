@@ -1060,8 +1060,8 @@ a.cdetail:hover {
   user-select: none;
   top: 40px;
 }
-.footer-deco-dog { left: 0; }
-.footer-deco-cat { right: 0; }
+.footer-deco-dog { left: max(0px, calc(50% - 610px)); }
+.footer-deco-cat { right: max(0px, calc(50% - 610px)); }
 
 .footer-top { padding: 64px 28px 0; }
 .footer-container {
