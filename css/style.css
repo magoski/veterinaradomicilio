@@ -1052,6 +1052,17 @@ a.cdetail:hover {
   position: relative;
   overflow: hidden;
 }
+.footer-deco {
+  position: absolute;
+  bottom: 0;
+  width: 220px;
+  opacity: 0.18;
+  pointer-events: none;
+  user-select: none;
+}
+.footer-deco-dog { left: 0; transform: scaleX(1); }
+.footer-deco-cat { right: 0; transform: scaleX(-1); }
+
 .footer::before {
   content: '';
   position: absolute;
