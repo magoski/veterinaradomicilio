@@ -1202,11 +1202,13 @@ a.cdetail:hover {
     display: none !important;
     position: fixed;
     top: 74px;
-    left: 16px;
     right: 16px;
+    left: auto;
     bottom: auto;
-    width: auto;
-    background: #ffffff;
+    width: 52%;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 18px;
     box-shadow: 0 12px 48px rgba(0,0,0,.18);
     flex-direction: column;
