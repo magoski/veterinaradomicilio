@@ -94,25 +94,29 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 const carTrack     = document.getElementById('carTrack');
 const dotsWrapper  = document.getElementById('carDots');
 const TOTAL        = 9;
-const PER_PAGE     = 3;
-const PAGES        = Math.ceil(TOTAL / PER_PAGE);
 let   currentPage  = 0;
 let   autoTimer;
 
-// build dots
-for (let i = 0; i < PAGES; i++) {
-  const dot = document.createElement('button');
-  dot.classList.add('car-dot');
-  dot.setAttribute('aria-label', `Página ${i + 1}`);
-  if (i === 0) dot.classList.add('active');
-  dot.addEventListener('click', () => goTo(i));
-  dotsWrapper.appendChild(dot);
+function getPerPage() { return window.innerWidth < 700 ? 1 : 3; }
+
+function buildDots() {
+  dotsWrapper.innerHTML = '';
+  const pages = Math.ceil(TOTAL / getPerPage());
+  for (let i = 0; i < pages; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('car-dot');
+    dot.setAttribute('aria-label', `Página ${i + 1}`);
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrapper.appendChild(dot);
+  }
 }
 
 function setCardWidths() {
+  const perPage = getPerPage();
   const wrapW = carTrack.parentElement.clientWidth;
   const gap   = 22;
-  const cardW = Math.floor((wrapW - gap * (PER_PAGE - 1)) / PER_PAGE);
+  const cardW = Math.floor((wrapW - gap * (perPage - 1)) / perPage);
   carTrack.querySelectorAll('.rcard').forEach(c => {
     c.style.minWidth = cardW + 'px';
     c.style.width    = cardW + 'px';
@@ -121,16 +125,19 @@ function setCardWidths() {
 }
 
 function goTo(page) {
-  currentPage = ((page % PAGES) + PAGES) % PAGES;
+  const perPage = getPerPage();
+  const pages   = Math.ceil(TOTAL / perPage);
+  currentPage = ((page % pages) + pages) % pages;
   const cardW = setCardWidths();
-  const step  = (cardW + 22) * PER_PAGE;
+  const step  = (cardW + 22) * perPage;
   carTrack.style.transform = `translateX(-${currentPage * step}px)`;
   dotsWrapper.querySelectorAll('.car-dot').forEach((d, i) => {
     d.classList.toggle('active', i === currentPage);
   });
 }
 
-window.addEventListener('load', () => goTo(0));
+window.addEventListener('load', () => { buildDots(); goTo(0); });
+window.addEventListener('resize', () => { buildDots(); goTo(0); });
 
 document.getElementById('prevBtn').addEventListener('click', () => { goTo(currentPage - 1); resetAuto(); });
 document.getElementById('nextBtn').addEventListener('click', () => { goTo(currentPage + 1); resetAuto(); });

@@ -1058,7 +1058,7 @@ a.cdetail:hover {
   opacity: 0.18;
   pointer-events: none;
   user-select: none;
-  top: 0;
+  top: 40px;
 }
 .footer-deco-dog { left: 0; }
 .footer-deco-cat { right: 0; }
@@ -1262,6 +1262,7 @@ a.cdetail:hover {
   .cform { padding: 28px 22px; }
 
   /* footer */
+  .footer-deco { display: none; }
   .footer-top .footer-container {
     grid-template-columns: 1fr;
     gap: 32px;
