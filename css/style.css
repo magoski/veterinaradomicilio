@@ -1054,9 +1054,8 @@ a.cdetail:hover {
 }
 .footer-deco {
   position: absolute;
-  width: 380px;
-  height: 380px;
-  object-fit: contain;
+  height: 340px;
+  width: auto;
   opacity: 0.12;
   pointer-events: none;
   user-select: none;
