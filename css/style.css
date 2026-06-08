@@ -1264,18 +1264,7 @@ a.cdetail:hover {
   .cform { padding: 28px 22px; }
 
   /* footer */
-  .footer-deco {
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    top: auto;
-    left: auto !important;
-    right: auto !important;
-    opacity: 0.18;
-  }
-  .footer-deco-cat { margin-top: -20px; }
+  .footer-deco { display: none; }
   .footer-top .footer-container {
     grid-template-columns: 1fr;
     gap: 32px;
