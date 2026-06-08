@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — Veterinaria a Domicilio</title>
+  <meta name="description" content="Vacunaciones, analíticas, consultas, terapias alternativas y mucho más. Atención veterinaria profesional a domicilio en Benidorm y la Marina Baixa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo.jpg" alt="Veterinaria a Domicilio" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Cristina Fernández</span>
+          <span class="logo-sub">Veterinaria a Domicilio</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-es="Home" data-en="Home">Home</a></li>
+        <li><a href="quien-soy.html" data-es="Quién soy" data-en="About me">Quién soy</a></li>
+        <li><a href="servicios.html" class="active" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta" data-es="Pedir Cita" data-en="Book Now">Pedir Cita</a></li>
+        <li class="lang-item">
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">EN</button>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-es="Nuestros Servicios" data-en="Our Services">Nuestros Servicios</h1>
+      <p data-es="Atención veterinaria completa en la comodidad de tu hogar, sin estrés para tu mascota." data-en="Complete veterinary care in the comfort of your home, stress-free for your pet.">
+        Atención veterinaria completa en la comodidad de tu hogar, sin estrés para tu mascota.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="services-page section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-es="¿Qué ofrezco?" data-en="What do I offer?">¿Qué ofrezco?</span>
+        <h2 data-es="Servicios a domicilio" data-en="Home services">Servicios a domicilio</h2>
+        <p data-es="Todos los servicios se realizan en tu hogar, con el material clínico necesario para una atención de máxima calidad." data-en="All services are carried out at your home with the clinical equipment needed for top-quality care.">
+          Todos los servicios se realizan en tu hogar, con el material clínico necesario para una atención de máxima calidad.
+        </p>
+      </div>
+
+      <div class="services-big-grid">
+
+        <div class="service-big-card reveal">
+          <div class="sbc-icon">💉</div>
+          <div class="sbc-body">
+            <h3 data-es="Vacunaciones" data-en="Vaccinations">Vacunaciones</h3>
+            <p data-es="Programa vacunal completo adaptado a la especie, edad y estilo de vida de tu mascota, sin necesidad de desplazamientos." data-en="Full vaccination programme tailored to your pet's species, age, and lifestyle, with no travel needed.">
+              Programa vacunal completo adaptado a la especie, edad y estilo de vida de tu mascota, sin necesidad de desplazamientos.
+            </p>
+            <ul>
+              <li data-es="Vacunas obligatorias y opcionales" data-en="Mandatory and optional vaccines">Vacunas obligatorias y opcionales</li>
+              <li data-es="Cartilla de vacunación actualizada" data-en="Updated vaccination record">Cartilla de vacunación actualizada</li>
+              <li data-es="Recuerdo anual con aviso" data-en="Annual booster reminder">Recuerdo anual con aviso</li>
+              <li data-es="Vacuna antirrábica homologada" data-en="Approved rabies vaccine">Vacuna antirrábica homologada</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-big-card reveal">
+          <div class="sbc-icon">🩸</div>
+          <div class="sbc-body">
+            <h3 data-es="Analíticas" data-en="Blood tests">Analíticas</h3>
+            <p data-es="Extracción de muestras en casa y envío al laboratorio de referencia. Resultados en 24-48 horas con informe detallado." data-en="Sample collection at home and dispatch to the reference laboratory. Results in 24-48 hours with a detailed report.">
+              Extracción de muestras en casa y envío al laboratorio de referencia. Resultados en 24-48 horas con informe detallado.
+            </p>
+            <ul>
+              <li data-es="Hemograma completo" data-en="Full blood count">Hemograma completo</li>
+              <li data-es="Bioquímica hepática y renal" data-en="Liver and kidney biochemistry">Bioquímica hepática y renal</li>
+              <li data-es="Perfiles hormonales" data-en="Hormonal profiles">Perfiles hormonales</li>
+              <li data-es="Análisis de orina y heces" data-en="Urine and stool analysis">Análisis de orina y heces</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-big-card reveal">
+          <div class="sbc-icon">🩺</div>
+          <div class="sbc-body">
+            <h3 data-es="Consultas generales" data-en="General consultations">Consultas generales</h3>
+            <p data-es="Revisión completa del estado de salud de tu mascota: exploración física, auscultación, valoración nutricional y consejo preventivo." data-en="Full health check for your pet: physical examination, auscultation, nutritional assessment, and preventive advice.">
+              Revisión completa del estado de salud de tu mascota: exploración física, auscultación, valoración nutricional y consejo preventivo.
+            </p>
+            <ul>
+              <li data-es="Revisión anual de salud" data-en="Annual health review">Revisión anual de salud</li>
+              <li data-es="Control de peso y nutrición" data-en="Weight and nutrition control">Control de peso y nutrición</li>
+              <li data-es="Desparasitación interna y externa" data-en="Internal and external deworming">Desparasitación interna y externa</li>
+              <li data-es="Asesoramiento post-consulta" data-en="Post-consultation advice">Asesoramiento post-consulta</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-big-card reveal">
+          <div class="sbc-icon">🌸</div>
+          <div class="sbc-body">
+            <h3 data-es="Terapias alternativas" data-en="Alternative therapies">Terapias alternativas</h3>
+            <p data-es="Acupuntura veterinaria, masoterapia y terapias energéticas para el manejo del dolor crónico, ansiedad y recuperación post-quirúrgica." data-en="Veterinary acupuncture, massage therapy, and energy therapies for chronic pain management, anxiety, and post-surgical recovery.">
+              Acupuntura veterinaria, masoterapia y terapias energéticas para el manejo del dolor crónico, ansiedad y recuperación post-quirúrgica.
+            </p>
+            <ul>
+              <li data-es="Acupuntura y moxibustión" data-en="Acupuncture and moxibustion">Acupuntura y moxibustión</li>
+              <li data-es="Masoterapia terapéutica" data-en="Therapeutic massage">Masoterapia terapéutica</li>
+              <li data-es="Terapia de flores de Bach" data-en="Bach flower therapy">Terapia de flores de Bach</li>
+              <li data-es="Rehabilitación post-operatoria" data-en="Post-operative rehabilitation">Rehabilitación post-operatoria</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-big-card reveal">
+          <div class="sbc-icon">🌿</div>
+          <div class="sbc-body">
+            <h3 data-es="Medicina natural" data-en="Natural medicine">Medicina natural</h3>
+            <p data-es="Tratamientos con fitoterapia y homeopatía veterinaria como complemento o alternativa a la medicina convencional en procesos crónicos o sistémicos." data-en="Treatments using phytotherapy and veterinary homeopathy as a complement or alternative to conventional medicine for chronic or systemic conditions.">
+              Tratamientos con fitoterapia y homeopatía veterinaria como complemento o alternativa a la medicina convencional en procesos crónicos o sistémicos.
+            </p>
+            <ul>
+              <li data-es="Fitoterapia personalizada" data-en="Personalised phytotherapy">Fitoterapia personalizada</li>
+              <li data-es="Homeopatía veterinaria" data-en="Veterinary homeopathy">Homeopatía veterinaria</li>
+              <li data-es="Suplementos naturales" data-en="Natural supplements">Suplementos naturales</li>
+              <li data-es="Dietas terapéuticas naturales" data-en="Natural therapeutic diets">Dietas terapéuticas naturales</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-big-card reveal">
+          <div class="sbc-icon">🩹</div>
+          <div class="sbc-body">
+            <h3 data-es="Curas y cuidados" data-en="Wound care">Curas y cuidados</h3>
+            <p data-es="Curas de heridas, retirada de puntos, administración de medicación y control de procesos crónicos sin salir de casa." data-en="Wound dressings, suture removal, medication administration, and management of chronic conditions without leaving home.">
+              Curas de heridas, retirada de puntos, administración de medicación y control de procesos crónicos sin salir de casa.
+            </p>
+            <ul>
+              <li data-es="Curas y vendajes" data-en="Dressings and bandaging">Curas y vendajes</li>
+              <li data-es="Retirada de puntos" data-en="Suture removal">Retirada de puntos</li>
+              <li data-es="Administración de medicación" data-en="Medication administration">Administración de medicación</li>
+              <li data-es="Seguimiento de enfermedades crónicas" data-en="Chronic disease follow-up">Seguimiento de enfermedades crónicas</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE AREA -->
+  <section class="coverage-section section-pad bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-es="Zona de cobertura" data-en="Coverage area">Zona de cobertura</span>
+        <h2 data-es="¿Llego hasta tu municipio?" data-en="Do I cover your town?">¿Llego hasta tu municipio?</h2>
+        <p data-es="Atiendo toda la comarca de la Marina Baixa y alrededores. Consulta si tu localidad está en mi zona." data-en="I cover the entire Marina Baixa region and surroundings. Check if your town is in my area.">
+          Atiendo toda la comarca de la Marina Baixa y alrededores. Consulta si tu localidad está en mi zona.
+        </p>
+      </div>
+      <div class="coverage-chips">
+        <span class="chip">Benidorm</span>
+        <span class="chip">Altea</span>
+        <span class="chip">Villajoyosa</span>
+        <span class="chip">Finestrat</span>
+        <span class="chip">La Nucía</span>
+        <span class="chip">Polop</span>
+        <span class="chip">Alfàs del Pi</span>
+        <span class="chip">Callosa d'En Sarrià</span>
+        <span class="chip">Orxeta</span>
+        <span class="chip">Relleu</span>
+        <span class="chip">Sella</span>
+        <span class="chip">Guadalest</span>
+      </div>
+      <p class="coverage-note" data-es="¿No ves tu localidad? Escríbeme y lo comprobamos." data-en="Don't see your town? Message me and we'll check.">
+        ¿No ves tu localidad? <a href="contacto.html">Escríbeme</a> y lo comprobamos.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="services-cta section-pad">
+    <div class="container">
+      <h2 data-es="¿Listo para pedir tu visita?" data-en="Ready to book your visit?">¿Listo para pedir tu visita?</h2>
+      <p data-es="Sin esperas, sin desplazamientos. Atención veterinaria de calidad en tu hogar." data-en="No waiting, no travel. Quality veterinary care at your home.">
+        Sin esperas, sin desplazamientos. Atención veterinaria de calidad en tu hogar.
+      </p>
+      <a href="contacto.html" class="btn-primary btn-lg" data-es="Pedir cita ahora" data-en="Book now">Pedir cita ahora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo.jpg" alt="Logo Veterinaria a Domicilio" />
+        <p data-es="Atención veterinaria profesional en la comodidad de tu hogar." data-en="Professional veterinary care in the comfort of your home.">
+          Atención veterinaria profesional en la comodidad de tu hogar.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h5 data-es="Páginas" data-en="Pages">Páginas</h5>
+        <ul>
+          <li><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li><a href="quien-soy.html" data-es="Quién soy" data-en="About me">Quién soy</a></li>
+          <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+          <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5 data-es="Contacto" data-en="Contact">Contacto</h5>
+        <ul>
+          <li><a href="tel:+34620017235">📞 +34 620 01 72 35</a></li>
+          <li><a href="mailto:cris@veterinariadomicilio.es">✉️ cris@veterinariadomicilio.es</a></li>
+          <li><a href="https://wa.me/34620017235" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+          <li>📍 Benidorm · Marina Baixa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-es="© 2025 Veterinaria a Domicilio · Cristina Fernández · Todos los derechos reservados." data-en="© 2025 Home Veterinary · Cristina Fernández · All rights reserved.">
+        © 2025 Veterinaria a Domicilio · Cristina Fernández · Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/34620017235" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

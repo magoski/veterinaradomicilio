@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Veterinaria a Domicilio</title>
+  <meta name="description" content="Pide tu cita o consulta con Cristina Fernández. Veterinaria a domicilio en Benidorm y la Marina Baixa. Teléfono: +34 620 01 72 35." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo.jpg" alt="Veterinaria a Domicilio" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Cristina Fernández</span>
+          <span class="logo-sub">Veterinaria a Domicilio</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-es="Home" data-en="Home">Home</a></li>
+        <li><a href="quien-soy.html" data-es="Quién soy" data-en="About me">Quién soy</a></li>
+        <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="contacto.html" class="active" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta" data-es="Pedir Cita" data-en="Book Now">Pedir Cita</a></li>
+        <li class="lang-item">
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">EN</button>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-es="Contacto" data-en="Contact">Contacto</h1>
+      <p data-es="Pide tu visita o consulta tus dudas. Estaré encantada de ayudarte." data-en="Book your visit or ask your questions. I'll be happy to help.">
+        Pide tu visita o consulta tus dudas. Estaré encantada de ayudarte.
+      </p>
+    </div>
+  </section>
+
+  <!-- PHONE BAR -->
+  <div class="phone-bar">
+    <a href="tel:+34620017235" class="phone-bar-link">
+      <span class="phone-bar-icon">📞</span>
+      <span class="phone-bar-number">+34 620 01 72 35</span>
+      <span class="phone-bar-label" data-es="Llámame ahora" data-en="Call me now">Llámame ahora</span>
+    </a>
+  </div>
+
+  <!-- CONTACT MAIN -->
+  <section class="contact-page section-pad">
+    <div class="container contact-page-grid">
+
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <span class="section-tag" data-es="Información" data-en="Information">Información</span>
+        <h2 data-es="Consulta tus dudas, te asesoro gratis" data-en="Ask your questions, free advice">Consulta tus dudas, te asesoro gratis</h2>
+        <p data-es="Sin compromiso. Si no sé si puedo ayudarte, te lo digo con total honestidad." data-en="No commitment. If I don't know whether I can help, I'll tell you honestly.">
+          Sin compromiso. Si no sé si puedo ayudarte, te lo digo con total honestidad.
+        </p>
+
+        <ul class="contact-details">
+          <li>
+            <span class="ci-icon">📞</span>
+            <div>
+              <strong data-es="Teléfono" data-en="Phone">Teléfono</strong>
+              <a href="tel:+34620017235">+34 620 01 72 35</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">✉️</span>
+            <div>
+              <strong data-es="Email" data-en="Email">Email</strong>
+              <a href="mailto:cris@veterinariadomicilio.es">cris@veterinariadomicilio.es</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/34620017235" target="_blank" rel="noopener" data-es="Escríbeme por WhatsApp" data-en="Message me on WhatsApp">Escríbeme por WhatsApp</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong data-es="Zona de cobertura" data-en="Coverage area">Zona de cobertura</strong>
+              <span data-es="Benidorm, Altea, Villajoyosa y Marina Baixa" data-en="Benidorm, Altea, Villajoyosa and Marina Baixa">Benidorm, Altea, Villajoyosa y Marina Baixa</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">🕐</span>
+            <div>
+              <strong data-es="Horario" data-en="Hours">Horario</strong>
+              <span data-es="Lunes a Sábado · 9:00 – 20:00" data-en="Monday to Saturday · 9:00 – 20:00">Lunes a Sábado · 9:00 – 20:00</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdavebee" method="POST" novalidate>
+          <h3 data-es="Pide tu cita" data-en="Book your appointment">Pide tu cita</h3>
+
+          <div class="form-group">
+            <label for="name" data-es="Nombre *" data-en="Name *">Nombre *</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre" data-placeholder-es="Tu nombre" data-placeholder-en="Your name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-es="Email *" data-en="Email *">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="comment" data-es="Cuéntame qué necesitas *" data-en="Tell me what you need *">Cuéntame qué necesitas *</label>
+            <textarea id="comment" name="comment" rows="5" required placeholder="Describe brevemente a tu mascota y lo que necesitas..." data-placeholder-es="Describe brevemente a tu mascota y lo que necesitas..." data-placeholder-en="Briefly describe your pet and what you need..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-full" data-es="Enviar consulta" data-en="Send enquiry">Enviar consulta</button>
+
+          <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo.jpg" alt="Logo Veterinaria a Domicilio" />
+        <p data-es="Atención veterinaria profesional en la comodidad de tu hogar." data-en="Professional veterinary care in the comfort of your home.">
+          Atención veterinaria profesional en la comodidad de tu hogar.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h5 data-es="Páginas" data-en="Pages">Páginas</h5>
+        <ul>
+          <li><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li><a href="quien-soy.html" data-es="Quién soy" data-en="About me">Quién soy</a></li>
+          <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+          <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5 data-es="Contacto" data-en="Contact">Contacto</h5>
+        <ul>
+          <li><a href="tel:+34620017235">📞 +34 620 01 72 35</a></li>
+          <li><a href="mailto:cris@veterinariadomicilio.es">✉️ cris@veterinariadomicilio.es</a></li>
+          <li><a href="https://wa.me/34620017235" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+          <li>📍 Benidorm · Marina Baixa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-es="© 2025 Veterinaria a Domicilio · Cristina Fernández · Todos los derechos reservados." data-en="© 2025 Home Veterinary · Cristina Fernández · All rights reserved.">
+        © 2025 Veterinaria a Domicilio · Cristina Fernández · Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/34620017235" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
