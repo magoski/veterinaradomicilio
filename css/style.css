@@ -1054,27 +1054,14 @@ a.cdetail:hover {
 }
 .footer-deco {
   position: absolute;
-  bottom: 0;
-  width: 220px;
+  width: 380px;
   opacity: 0.18;
   pointer-events: none;
   user-select: none;
+  top: 0;
 }
-.footer-deco-dog { left: 0; transform: scaleX(1); }
-.footer-deco-cat { right: 0; transform: scaleX(-1); }
-
-.footer::before {
-  content: '';
-  position: absolute;
-  right: -60px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 480px;
-  height: 480px;
-  background: url('../img/logo.jpg') center/contain no-repeat;
-  opacity: .06;
-  pointer-events: none;
-}
+.footer-deco-dog { left: 0; }
+.footer-deco-cat { right: 0; }
 
 .footer-top { padding: 64px 28px 0; }
 .footer-container {
