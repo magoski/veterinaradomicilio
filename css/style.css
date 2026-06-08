@@ -1234,8 +1234,7 @@ a.cdetail:hover {
   }
   .hero-image { order: -1; }
   .hero-photo { width: 300px; height: 380px; border-radius: 0; margin-left: 0; margin-right: auto; }
-  .hero-badge { left: auto; right: -8px; bottom: auto; top: 70px; transform: none; padding: 10px 14px; }
-  .hero-badge strong { font-size: 1.1rem; }
+  .hero-badge { position: relative; bottom: auto; left: auto; right: auto; top: auto; transform: none; margin: 12px auto 0; }
   .hero-badge-2 { top: 10px; right: -8px; }
   .hero-actions { justify-content: center; }
   .hero-checks { align-items: center; }
